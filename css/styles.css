@@ -9,14 +9,14 @@ body {
   background-image: url("/images/bg-intro-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   font-family: "Poppins", sans-serif;
   color: #fff;
+
   padding: 5.5em 1.5em 4.25em;
 }
 
 .container {
-  min-width: 375px;
+  margin: 0 auto;
 }
 
 /* Header begins */
@@ -32,13 +32,16 @@ body {
 
 .header p {
   margin-top: 1em;
+  margin-bottom: 3.5em;
 }
 /* Header ends */
 
 /* form begins */
 .form {
+  width: 100%;
   max-width: 34.375em;
-  margin: 4.25em auto;
+  /* min-width: 345px; */
+  margin: 0 auto;
 }
 
 .pricing {
@@ -124,6 +127,7 @@ input:focus {
   text-align: center;
   letter-spacing: 1px;
   transition: 0.3s;
+  box-sizing: border-box;
 }
 
 .form-btn:hover {
@@ -174,16 +178,10 @@ a:active {
 /* form ends */
 
 /* Start Media Queries */
-/* @media screen and (min-width: 698px) {
-  body {
-    background-image: url("/images/bg-intro-desktop.png");
-  }
-} */
 
 @media screen and (min-width: 1440px) {
   body {
     padding: 7.5626em 10.3125em;
-    /* background-image: url("/images/bg-intro-desktop.png"); */
   }
 
   .container {
@@ -214,6 +212,12 @@ a:active {
 
   .terms {
     font-size: 0.6875rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    min-width: 350px;
   }
 }
 /* End Media Queries */
